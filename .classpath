@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="assignment-2/a"/>
+	<classpathentry kind="src" path="assignment-2/b"/>
+	<classpathentry kind="src" path="assignment-4"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
