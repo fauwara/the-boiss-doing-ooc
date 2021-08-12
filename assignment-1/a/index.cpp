@@ -55,15 +55,15 @@ class ORDER{
 
             finalPrice = fdqty*fdprice;
             finalPrice = (finalPrice > 500)? finalPrice+(finalPrice*0.1) : finalPrice;
-            cout << "Your total price will be: " << finalPrice;
+            cout << "Your total price will be: " << finalPrice<<endl;
 
         }
 };
 
 int main(){
     
-    ORDER order1;
+    ORDER order1,order2;
     order1.orderFood();
-
+    order2.orderFood();
     return 0;
 }
