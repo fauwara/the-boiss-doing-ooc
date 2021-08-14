@@ -7,31 +7,6 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-// class Form{
-
-//     JLabel label;
-//     JTextField input;
-
-//     Form(JFrame frame, String name, int frameWidth, int yAxis, int height) {
-
-//         JLabel label;
-//         JTextField input;
-            
-//         // label
-//         label = new JLabel( name + ": ");
-//         label.setBounds(frameWidth/8, yAxis, frameWidth/4, height);
-//         frame.add(label);
-        
-//         // input
-//         input = new JTextField("");
-//         input.setBounds((frameWidth/8 + frameWidth/4), yAxis, frameWidth/2, height);
-//         frame.add(input);
-    
-//     }    
-
-// }
-
-
 public class index {
 
     // DRY CODE
@@ -83,7 +58,6 @@ public class index {
         });
         f.add(button);
 
-        
         f.setSize(frameWidth,frameHeight);
         f.setLayout(null);  
         f.setVisible(true);
