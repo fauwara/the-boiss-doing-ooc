@@ -11,11 +11,23 @@
 // Note : xx is the quantity of fruits
 
 // exception
-class InvalidFruitCount extends Exception{  
-    public InvalidFruitCount (String str){    
+class BoxFullException extends Exception{  
+    public BoxFullException (String str){    
         super(str);
     }  
-}  
+}
+
+class NotEnoughFruits extends Exception{  
+    public NotEnoughFruits (String str){   
+        super(str);
+    }  
+}
+
+class Lowstock extends Exception{  
+    public Lowstock (String str){    
+        super(str);
+    }  
+}
 
 class Fruits {
     String fruitName;
@@ -36,16 +48,16 @@ class Fruits {
         try{
             
             if(fruitQty + qty > 100){
-                throw new InvalidFruitCount("Box is almost full. You can add only " + (100 - fruitQty) + " fruits");
+                throw new BoxFullException("Box is almost full. You can add only " + (100 - fruitQty) + " fruits");
             }
 
             fruitQty += qty;
             System.out.println("Added " + qty + " more " + fruitName + ".\nTotal: " + fruitQty );
         }
-        catch (InvalidFruitCount ex)
+        catch (BoxFullException ex)
         {
             // System.out.println("Caught");
-            System.out.println(ex.getMessage());
+            System.out.println(ex);
         }
 
     }
@@ -55,19 +67,25 @@ class Fruits {
         try{
             
             if(fruitQty - qty < 0){
-                throw new InvalidFruitCount("You only have " + fruitQty + " number of fruits");
+                throw new NotEnoughFruits("You only have " + fruitQty + " number of fruits");
             }
 
             fruitQty -= qty;
             System.out.println("used " + qty + " " + fruitName + ".\nTotal: " + fruitQty );
-            if (fruitQty == 0){
-                System.out.println("Lowstock");
+            
+            try{
+                if (fruitQty == 0){
+                    throw new Lowstock("LOWSTOCK");
+                }
+            }catch(Lowstock ex){
+                System.out.println(ex);
             }
+            
         }
-        catch (InvalidFruitCount ex)
+        catch (NotEnoughFruits ex)
         {
             // System.out.println("Caught");
-            System.out.println(ex.getMessage());
+            System.out.println(ex);
         }
 
     }

@@ -3,6 +3,8 @@ index.exe
 
 fruits.class
 index.class
-InvalidFruitCount.class
+Lowstock.class
+NotEnoughFruits.class
+BoxFullException.class
 
 /bin/
