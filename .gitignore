@@ -1,10 +1,4 @@
-a.exe
-index.exe
-
-fruits.class
-index.class
-Lowstock.class
-NotEnoughFruits.class
-BoxFullException.class
+*.exe
+*.class
 
 /bin/
