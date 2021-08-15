@@ -2,8 +2,7 @@
 // and your achievements.
 // Note: The application must contain at least 8 swing components.
 
-// package a;
-import java.awt.*;
+package a;
 import java.awt.event.*;
 import javax.swing.*;
 

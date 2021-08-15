@@ -3,9 +3,9 @@ import java.awt.event.*;
 import javax.swing.*;
 
 public class swings {  
-    static String myBio="Hello!! My name is Abhishek Jathan.";
-public static void main(String[] args) {  
-	myBio="";
+    // static String myBio="Hello!! My name is Abhishek Jathan.";
+    public static void main(String[] args) {  
+	// String myBio=" hee";
 	JFrame f= new JFrame("About me");  
     JLabel l1,l2,l3; 
     JButton b=new JButton("Click to reveal details");  
@@ -13,17 +13,19 @@ public static void main(String[] args) {
     panel.setBounds(40,80,200,200); 
     b.setBounds(250, 5, 200, 20);  
     
+    // myBio="Hello!! My name is Abhishek Jathan.";
+    JTextArea bio=new JTextArea();
+    //bio.setVisible(true);
+    bio.setBounds(100,200,200,100);
     //bio.setVisible(false);
+    
     b.addActionListener(
     	new ActionListener(){	  
-    	public void actionPerformed(ActionEvent e){  
-    	    	//myBio="Hello!! My name is Abhishek Jathan.";
-    			JTextArea bio;
-    			bio=new JTextArea(myBio);
-    			//bio.setVisible(true);
-    			bio.setBounds(100,200,200,100);
-    			panel.add(bio);
-    	        }  
+    	public void actionPerformed(ActionEvent e){
+                panel.add(bio);
+                String myBio = "ahskjdhaslkdlgas";
+                bio.setText(myBio);
+            }  
     	}
     );   
     
