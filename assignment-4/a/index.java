@@ -2,7 +2,6 @@
 // and your achievements.
 // Note: The application must contain at least 8 swing components.
 
-package a;
 import java.awt.event.*;
 import javax.swing.*;
 
@@ -30,8 +29,8 @@ public class index {
     public static void main(String[] args) {  
         
         JFrame f = new JFrame(); // creating the frame object
-        int frameWidth = 400;
-        int frameHeight = 400;
+        int frameWidth = 800;
+        int frameHeight = 800;
 
         // initializing form swing components
         JTextField dad = createForm(f, "DAD", frameWidth, 10, 30);

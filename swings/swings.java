@@ -9,7 +9,7 @@ public class swings {
 	JFrame f= new JFrame("About me");  
     JLabel l1,l2,l3; 
     JButton b=new JButton("Click to reveal details");  
-    JPanel panel=new JPanel();   
+    JPanel panel=new JPanel();
     panel.setBounds(40,80,200,200); 
     b.setBounds(250, 5, 200, 20);  
     
